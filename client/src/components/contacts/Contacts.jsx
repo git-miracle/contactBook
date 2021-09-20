@@ -1,15 +1,16 @@
 import React, { useContext } from 'react';
 import ContactContext from '../../contaxt/contact/ContactContext';
+import ContactItem from './ContactItem';
 
 const Contacts = () => {
   const contactContext = useContext(ContactContext);
   const { contacts } = contactContext;
   return (
-    <>
+    <div>
       {contacts.map((contact) => (
-        <h3>{contact.name}</h3>
+        <ContactItem key={contact.id} contact={contact} />
       ))}
-    </>
+    </div>
   );
 };
 

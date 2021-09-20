@@ -95,6 +95,8 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.308);
 }
 
 /* List */
@@ -443,5 +445,19 @@ table th {
 .center-items {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.center-items-v {
+  display: flex;
+  align-items: center;
+}
+.tc {
+  text-transform: capitalize !important;
+}
+.edit-del {
+  font-size: 22px;
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
   align-items: center;
 }

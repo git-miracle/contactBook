@@ -4,7 +4,10 @@ import Contacts from './contacts/Contacts';
 function Home() {
   return (
     <div className='grid-2'>
-      <Contacts />
+      <div>{/* FORM */}</div>
+      <div>
+        <Contacts />
+      </div>
     </div>
   );
 }
