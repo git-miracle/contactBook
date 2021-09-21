@@ -1,13 +1,26 @@
-import React from 'react';
-import { FaEnvelopeOpen, FaPhoneSquareAlt, FaUserEdit, FaTrashAlt, FaEdit } from 'react-icons/fa';
+import React from 'react'
+import {
+  FaEnvelopeOpen,
+  FaPhoneSquareAlt,
+  FaTrashAlt,
+  FaEdit,
+} from 'react-icons/fa'
 
 const ContactItem = ({ contact }) => {
-  const { id, name, email, phone, type } = contact;
+  const { name, email, phone, type } = contact
   return (
     <div className='card bg-light'>
       <h3 className='text-primary text-left tc'>
         {name}
-        <span style={{ float: 'right' }} className={'badge ' + (type === 'profesional' ? 'badge-success' : 'badge-primary')}>
+        <span
+          style={{ float: 'right' }}
+          className={
+            'badge ' +
+            (type === 'profesional'
+              ? 'badge-success'
+              : 'badge-primary')
+          }
+        >
           {type.charAt(0).toUpperCase() + type.slice(1)}
         </span>
       </h3>
@@ -28,7 +41,7 @@ const ContactItem = ({ contact }) => {
         <FaTrashAlt style={{ color: 'red' }} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactItem;
+export default ContactItem

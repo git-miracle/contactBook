@@ -1,15 +1,18 @@
-import React from 'react';
-import Contacts from './contacts/Contacts';
+import React from 'react'
+import ContactForm from './ContactForm'
+import Contacts from './contacts/Contacts'
 
 function Home() {
   return (
     <div className='grid-2'>
-      <div>{/* FORM */}</div>
+      <div>
+        <ContactForm />
+      </div>
       <div>
         <Contacts />
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
