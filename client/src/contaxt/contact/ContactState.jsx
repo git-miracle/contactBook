@@ -47,20 +47,29 @@ const ContactState = (props) => {
     contact.id = uuidv4() //or Date.now()
     dispatch({ type: ADD_CONTCT, payload: contact })
   }
+
   //delete contact
   const deleteContact = (id) => {
     dispatch({ type: DELETE_CONTCT, payload: id })
   }
+
   //update contact
+  const updateContact = (contact) => {
+    dispatch({ type: UPDATE_CONTCT, payload: contact })
+  }
+
   // set current contacts
   const setCurrent = (contact) => {
     dispatch({ type: SET_CURRENT, payload: contact })
   }
+
   //filter contact
+
   //clear contact
   const clearCurrent = () => {
     dispatch({ type: CLEAR_CURRENT })
   }
+
   return (
     <ContactContext.Provider
       value={{
@@ -70,6 +79,7 @@ const ContactState = (props) => {
         deleteContact,
         setCurrent,
         clearCurrent,
+        updateContact,
       }}
     >
       {props.children}
