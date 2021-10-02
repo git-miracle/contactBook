@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactForm from './ContactForm'
 import Contacts from './contacts/Contacts'
+import ContactFliter from './ContactFliter'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <ContactForm />
       </div>
       <div>
+        <ContactFliter />
         <Contacts />
       </div>
     </div>
