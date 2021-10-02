@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { FaAddressCard } from 'react-icons/fa';
+import { FaAddressCard } from 'react-icons/fa'
 
 function Navbar(props) {
   return (
@@ -20,10 +20,16 @@ function Navbar(props) {
           <li>
             <Link to='/about'>About</Link>
           </li>
+          <li>
+            <Link to='/register'>Register</Link>
+          </li>
+          <li>
+            <Link to='/login'>Login</Link>
+          </li>
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

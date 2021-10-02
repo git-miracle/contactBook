@@ -25,7 +25,7 @@ const ContactFliter = () => {
       <input
         type='text'
         ref={text}
-        placeholder='Search contact'
+        placeholder='Search contacts...'
         onChange={onChange}
       />
     </form>
