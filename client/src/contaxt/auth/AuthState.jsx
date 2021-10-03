@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
 import AuthContext from './authContext'
-import authReducer from './authReducer'
+import authReducer from './authReducer.jsx'
 import {
   REGISTER_SUCCESS,
   REGISTER_FAIL,
